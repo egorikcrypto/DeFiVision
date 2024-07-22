@@ -1,0 +1,26 @@
+# DeFiVision.py
+
+class DeFiVision:
+    def __init__(self, platform_name, vision_areas):
+        self.platform_name = platform_name
+        self.vision_areas = vision_areas
+    
+    def display_platform_info(self):
+        print(f"Platform Name: {self.platform_name}")
+        print("Vision Areas:")
+        for area in self.vision_areas:
+            print(f"- {area}")
+
+# Example usage
+if __name__ == "__main__":
+    platform_name = "DeFiVision"
+    vision_areas = [
+        "Decentralized Exchanges (DEX)",
+        "Lending and Borrowing",
+        "Stablecoins and Payments",
+        "Automated Market Makers (AMM)",
+        "Blockchain Interoperability"
+    ]
+    
+    defi_vision = DeFiVision(platform_name, vision_areas)
+    defi_vision.display_platform_info()
